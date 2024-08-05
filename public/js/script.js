@@ -16,3 +16,5 @@ if (navigator.geolocation) {
     }
   );
 }
+
+L.map("map");
