@@ -1,0 +1,21 @@
+Check if browser supports geolocation.
+
+set location for high accuracy , 5-sec timeout , no caching.
+
+use watchPosition to track the users location continuosly.
+
+emit the "latitude & longitude" via sokcet.io using "send-location". Console log errors.
+
+Intialize a map with center co-ordinate with (0,0) with a zoom level of 15 using leaflet.
+add openstreetmap tiles to the map
+
+create an empty object markers.
+
+when receiving location data via socket.io.       extract long,lat,id,center the map of new co-ordinates.
+
+If marker for the id exists     then update the position
+else create new marker for given co-ordinates and add it to the map.
+
+when user disconnects
+remove their marker from the map
+delete from the markers
